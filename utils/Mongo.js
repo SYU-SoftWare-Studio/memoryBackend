@@ -16,7 +16,9 @@ db.on('open', (err) => {
 });
 
 const Production = mongoose.model('production', Collection.Production());
+const Review = mongoose.model('review', Collection.Review());
 
 module.exports = {
   Production,
+  Review,
 };
